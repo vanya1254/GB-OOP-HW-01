@@ -43,11 +43,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        Product[] = new Product[]{new Food[]{new Bread[]{new Bread("Bread white", 40, 1, "22.03.23", "Wheat"),
-                                                         new Bread("Bread grey", 45, 1, "25.03.23", "Rye")
+        Product[] products = new Product[]{new Food[]{new Bread[]{new Bread("Bread white", 40, 1, "loaf" , "22.03.23", "Wheat"),
+                                                         new Bread("Bread grey", 45, 1, "loaf", "25.03.23", "Rye")
                                                         },
-                                             new Eggs[]{new Eggs("Chicken eggs", 80, 2, "15.03.23", 10),
-                                                        new Eggs("Quail eggs", 60, 1, "17.03.23", 10)
+                                             new Eggs[]{new Eggs("Chicken eggs", 80, 2, "pack" , "15.03.23", 10),
+                                                        new Eggs("Quail eggs", 60, 1, "pack", "17.03.23", 10)
                                                        }
                                             },
                                   new Drinks[]{new Milk[]{new Milk("Milk Parmalat", 110, 2, "l", 1, 1.8, "19.03.23"),
@@ -67,12 +67,12 @@ public class Main {
                                   new Children[]{new Diapers[]{new Diapers("Huggies", 320, 3, "pack", 2, true, 50, 4, 6, "elite soft"),
                                                                new Diapers("Pampers", 1300, 1, "pack", 1, true, 94, 2, 5, "new baby dry")
                                                               },
-                                                 new Nipple[]{new Nipple("Nipple Mepsi", 200, 1, "pack", true),
-                                                              new Nipple("Nipple Lubby Just", 130, 1, "pack", true)
+                                                 new Nipple[]{new Nipple("Nipple Mepsi", 200, 1, 0, "pack", true),
+                                                              new Nipple("Nipple Lubby Just", 130, 1, 1, "pack", true)
                                                              }
                                                 }
                                  };
 
-        showAllProducts(p)
+        showAllProducts(products);
     }
 }
