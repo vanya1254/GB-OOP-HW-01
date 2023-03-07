@@ -12,7 +12,7 @@ public class Milk extends Drinks {
     @Override
     public String toString() {
         return String.format(
-                "Milk{ name=%s, price=%d, quantity=%d, unit=%s, volume=%2.1f, fatContent=%2.1f, expirationDate=%s }",
+                "Product -> Drinks -> Milk{ name=%s, price=%d, quantity=%d, unit=%s, volume=%2.1f, fatContent=%2.1f, expirationDate=%s }",
                 name, price, quantity, unit, volume, fatContent, expirationDate);
     }
 }

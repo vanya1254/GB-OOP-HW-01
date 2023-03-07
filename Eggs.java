@@ -10,7 +10,7 @@ public class Eggs extends Food {
     @Override
     public String toString() {
         return String.format(
-                "Eggs{ name=%s, price=%d, quantity=%d, unit=%s, expirationDate=%s, quantityPerPackage=%d }", name,
+                "Product -> Food -> Eggs{ name=%s, price=%d, quantity=%d, unit=%s, expirationDate=%s, quantityPerPackage=%d }", name,
                 price, quantity, unit, expirationDate, quantityPerPackage);
     }
 }

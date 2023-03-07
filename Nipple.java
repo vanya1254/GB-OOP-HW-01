@@ -6,7 +6,7 @@ public class Nipple extends Children {
 
     @Override
     public String toString() {
-        return String.format("Children{ name=%s, price=%d, quantity=%d, unit=%s, minAge=%d, hypoallergenic=%b }", name,
+        return String.format("Product -> Children -> Nipple{ name=%s, price=%d, quantity=%d, unit=%s, minAge=%d, hypoallergenic=%b }", name,
                 price, quantity, unit, minAge, hypoallergenic);
     }
 }

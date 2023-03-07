@@ -10,7 +10,7 @@ public class ToiletPaper extends Hygiene {
     @Override
     public String toString() {
         return String.format(
-                "ToiletPaper{ name=%s, price=%d, quantity=%d, unit=%s, piecesPerPackage=%d, numOfLayers=%d }", name,
+                "Product -> Hygiene -> ToiletPaper{ name=%s, price=%d, quantity=%d, unit=%s, piecesPerPackage=%d, numOfLayers=%d }", name,
                 price, quantity, unit, piecesPerPackage, numOfLayers);
     }
 }

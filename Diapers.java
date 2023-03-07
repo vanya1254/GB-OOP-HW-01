@@ -16,7 +16,7 @@ public class Diapers extends Children {
     @Override
     public String toString() {
         return String.format(
-                "Diapers{ name=%s, price=%d, quantity=%d, unit=%s, minAge=%d, hypoallergenic=%b, piecesPerPackage=%d, minWeight=%2.1f, maxWeight=%2.1f, type=%s }",
+                "Product -> Children -> Diapers{ name=%s, price=%d, quantity=%d, unit=%s, minAge=%d, hypoallergenic=%b, piecesPerPackage=%d, minWeight=%2.1f, maxWeight=%2.1f, type=%s }",
                 name, price, quantity, unit, minAge, hypoallergenic, piecesPerPackage, minWeight, maxWeight, type);
     }
 }

@@ -8,7 +8,7 @@ public class Food extends Product {
 
     @Override
     public String toString() {
-        return String.format("Food{ name=%s, price=%d, quantity=%d, unit=%s, expirationDate=%s }", name, price,
+        return String.format("Product -> Food{ name=%s, price=%d, quantity=%d, unit=%s, expirationDate=%s }", name, price,
                 quantity, unit, expirationDate);
     }
 }

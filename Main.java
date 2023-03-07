@@ -43,36 +43,50 @@
 
 public class Main {
     public static void main(String[] args) {
-        Product[] products = new Product[]{new Food[]{new Bread[]{new Bread("Bread white", 40, 1, "loaf" , "22.03.23", "Wheat"),
-                                                         new Bread("Bread grey", 45, 1, "loaf", "25.03.23", "Rye")
-                                                        },
-                                             new Eggs[]{new Eggs("Chicken eggs", 80, 2, "pack" , "15.03.23", 10),
-                                                        new Eggs("Quail eggs", 60, 1, "pack", "17.03.23", 10)
-                                                       }
-                                            },
-                                  new Drinks[]{new Milk[]{new Milk("Milk Parmalat", 110, 2, "l", 1, 1.8, "19.03.23"),
-                                                          new Milk("Milk Ekoniva", 115, 1, "l", 1, 3.5, "13.03.23")
-                                                         },
-                                               new Lemonade[]{new Lemonade("Duchess", 60, 4, "l", 0.5),
-                                                              new Lemonade("Buratino", 60, 1, "l", 0.5)
-                                                             }
-                                              },
-                                  new Hygiene[]{new Masks[]{new Masks("Green Mask", 190, "ml", "15.03.24", 40),
-                                                            new Masks("Kapous Mask", 70, "g", "10.02.24", 25)
-                                                           },
-                                                new ToiletPaper[]{new ToiletPaper("Zewa paper", 200, 2, "pack", 4, 4),
-                                                                  new ToiletPaper("Papia paper", 120, 1, "pack", 8, 3)
-                                                                 }
-                                               },
-                                  new Children[]{new Diapers[]{new Diapers("Huggies", 320, 3, "pack", 2, true, 50, 4, 6, "elite soft"),
-                                                               new Diapers("Pampers", 1300, 1, "pack", 1, true, 94, 2, 5, "new baby dry")
-                                                              },
-                                                 new Nipple[]{new Nipple("Nipple Mepsi", 200, 1, 0, "pack", true),
-                                                              new Nipple("Nipple Lubby Just", 130, 1, 1, "pack", true)
-                                                             }
-                                                }
-                                 };
+        Product[][][] products = new Product[][][]{
+            new Food[][]{new Bread[]{new Bread("Bread white", 40, 1, "loaf" , "22.03.23", "Wheat"),
+                                     new Bread("Bread grey", 45, 1, "loaf", "25.03.23", "Rye")
+                                    },
+                         new Eggs[]{new Eggs("Chicken eggs", 80, 2, "pack" , "15.03.23", 10),
+                                    new Eggs("Quail eggs", 60, 1, "pack", "17.03.23", 10)
+                                   }
+                        },
+            new Drinks[][]{new Milk[]{new Milk("Milk Parmalat", 110, 2, "l", 1.0, 1.8, "19.03.23"),
+                                      new Milk("Milk Ekoniva", 115, 1, "l", 1.0, 3.5, "13.03.23")
+                                     },
+                           new Lemonade[]{new Lemonade("Duchess", 60, 4, "l", 0.5),
+                                          new Lemonade("Buratino", 60, 1, "l", 0.5)
+                                         }
+                          },
+            new Hygiene[][]{new Masks[]{new Masks("Green Mask", 190, 1, "ml", 40),
+                                        new Masks("Kapous Mask", 70, 5, "g", 25)
+                                       },
+                            new ToiletPaper[]{new ToiletPaper("Zewa paper", 200, 2, "pack", 4, 4),
+                                              new ToiletPaper("Papia paper", 120, 1, "pack", 8, 3)
+                                             }
+                           },
+            new Children[][]{new Diapers[]{new Diapers("Huggies", 320, 3, "pack", 2, true, 50, 4.0, 6.0, "elite soft"),
+                                           new Diapers("Pampers", 1300, 1, "pack", 1, true, 94, 2.0, 5.0, "new baby dry")
+                                          },
+                             new Nipple[]{new Nipple("Nipple Mepsi", 200, 1, "pack", 0, true),
+                                          new Nipple("Nipple Lubby Just", 130, 1, "pack", 1, true)
+                                         }
+                            }
+        };
 
         showAllProducts(products);
     }
+
+    private static void showAllProducts(Product[][][] products) {
+        for (Product[][] products2 : products) {
+            for (Product[] products3 : products2) {
+                System.out.println();
+                for (Product products4 : products3) {
+                    System.out.printf("\t%s", products4);
+                    System.out.println();
+                }
+            }
+        }
+    }
+
 }

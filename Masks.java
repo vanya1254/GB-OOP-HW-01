@@ -6,7 +6,7 @@ public class Masks extends Hygiene {
 
     @Override
     public String toString() {
-        return String.format("Masks{ name=%s, price=%d, quantity=%d, unit=%s, piecesPerPackage=%d }", name, price,
+        return String.format("Product -> Hygiene -> Masks{ name=%s, price=%d, quantity=%d, unit=%s, piecesPerPackage=%d }", name, price,
                 quantity, unit, piecesPerPackage);
     }
 }
