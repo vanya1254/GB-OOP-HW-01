@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Product {
     protected String name;
     protected Integer price;
